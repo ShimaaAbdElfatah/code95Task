@@ -1,0 +1,269 @@
+   
+   
+   a
+   {
+       text-decoration: none;
+       color:black;
+   }
+   
+   .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    }
+
+    .topnav .search-container button {
+
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-left:-4px;
+    /* margin-right: 16px; */
+    background: #fff;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    }
+
+    .pull-right {
+        float: right;
+    }
+
+    .fa-search{
+    color: red;
+    }
+
+    .menu-margin
+    {
+        margin-right:8px;
+        margin-left: 12px;
+    }
+
+    .full-width-height
+    {
+        widows: 100%;
+        height:100%;
+    }
+
+    .carousel-item-padding
+    {
+        padding-left:0px; 
+        padding-right:0px;
+    }
+
+    .card-margin
+    {
+        margin-left: 0px;
+        margin-right:0px;
+
+    }
+    .font
+    {
+        font-family: "Times New Roman", Times, serif;
+    }
+
+
+@media screen and (max-width: 600px) {
+    /* .topnav .search-container {
+      float: none;
+    } */
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;  
+    }
+}
+
+span.local{
+    background-color: red;
+}
+
+span.global{
+    background-color: blue;
+}
+
+hr{
+	border-top: 2px solid #000000;
+}
+
+.vl {
+    border-left: 1px solid black;
+    height: 100%;
+}
+
+.borderless{
+    border-right:none;
+    border-left: none;
+}
+
+.card{
+   margin-bottom: 1px;
+   margin-top: 1px;
+   margin-left: 2px;
+   margin-right: 2px;
+   border-top-left-radius: 0rem;
+   border-top-right-radius: 0rem;
+   border-bottom-right-radius: 0rem;
+   border-bottom-left-radius: 0rem;
+}
+
+.col-sm-5{
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.col-sm-3{
+    padding-left: 1px;
+    padding-right: 1px;
+}
+.slide-button{
+    width:3%; height:20%; 
+    background-color:red;
+    margin-right:3px;
+    margin-left:3px; 
+    margin-top:5%;
+}
+/* ***********************************************************************SLIDER TEST********************************************************************************** */
+
+
+@media (min-width: 768px) {
+    /* show 4 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+      display: block;
+    }
+  
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+      transition: none;
+    }
+  
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+  
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -25%;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+  
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      -webkit-transform: translate3d(-100%, 0, 0);
+              transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    /* farthest right hidden item must be absolue position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+  
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      -webkit-transform: translate3d(100%, 0, 0);
+              transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+    }
+  }
+  
+
+/* ******************************************************************************************************************************************************* */
+.list-group-item{
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    font-weight: bold;
+    font-size: small;
+}
+
+
+:first-child.list-group-item{
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}
+
+:last-child.list-group-item{
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}
+
+
+ol {
+	counter-reset:li; /* Initiate a counter */
+	margin-left:0; /* Remove the default left margin */
+	padding-left:0; /* Remove the default left padding */
+}
+ol > li {
+	position:relative; /* Create a positioning context */
+	margin:0 0 8px 2em; /* Give each list item a left margin to make room for the numbers */
+	padding:2px 4px; /* Add some spacing around the content */
+	list-style:none; /* Disable the normal item numbering */
+	border-top:none;
+	background:#f6f6f6;
+}
+ol > li:before {
+	content:counter(li); /* Use the counter as content */
+	counter-increment:li; /* Increment the counter by 1 */
+	/* Position and style the number */
+	position:relative;
+	top: 1px;
+	left:-1em;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	width:2em;
+	/* Some space between the number and the content in browsers that support
+	   generated content but not positioning it (Camino 2 is one example) */
+	margin-right:6px;
+	padding:2px;
+	border-top:none;
+    color:#fff;
+	background:#f00;
+	font-weight:bold;
+	font-family:"Helvetica Neue", Arial, sans-serif;
+	text-align:center;
+}
+li ol,
+li ul {margin-top:6px;}
+ol ol li:last-child {margin-bottom:0;}
